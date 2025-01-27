@@ -1,0 +1,139 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #034694; /* Chelsea blue */
+  padding: 10px 0;
+  text-align: center;
+}
+
+.navbar {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Align items centrally */
+  align-items: center; /* Vertical alignment */
+  gap: 15px; /* Small gap for minimal spacing */
+}
+
+.navbar li {
+  margin: 0; /* Remove extra margin */
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0 5px; /* Minimal padding to bring links closer */
+  margin: 0; /* Remove additional margin */
+}
+
+.navbar a:hover {
+  text-decoration: underline; /* Keep hover effect */
+  background-color: #023e8a; /* Add a hover background color */
+  padding: 5px 10px; /* Add padding for hover effect */
+  border-radius: 5px; /* Rounded hover background */
+}
+
+h1 {
+  color: #034694; /* Chelsea blue */
+  margin-top: 20px;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+h2 {
+  color: #034694; /* Chelsea blue */
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+#team-content, #fixtures-content, #gallery-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#team-content .player, #fixtures-content .fixture, #gallery-content .gallery-item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  width: 200px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  #team-content .player,
+  #fixtures-content .fixture,
+  #gallery-content .gallery-item {
+    width: 90%;
+  }
+}
+
+.navbar a.active {
+  text-decoration: none;
+  color: #ffd700; /* Active link color */
+}
+
+#map-section {
+  margin: 20px 0;
+  text-align: center; /* Center-align the map section title */
+}
+
+#map-container {
+  width: 1000px; /* Square size for the map */
+  height: 300px; /* Matches the iframe width and height */
+  margin: 0 auto; /* Center the map container */
+  border: 2px solid #034694; /* Optional border to match Chelsea blue */
+  border-radius: 8px; /* Slight rounding of corners */
+  overflow: hidden; /* Ensure iframe stays within the container */
+}
+
+#map-container iframe {
+  width: 100%; /* Make iframe fill the container width */
+  height: 100%; /* Make iframe fill the container height */
+}
+
+#gallery-content .gallery-item img {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px; /* Ensure consistent styling */
+}
+
+#gallery-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+
+html {
+  scroll-behavior:smooth ;
+}
+
+.player-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
