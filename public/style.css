@@ -1,5 +1,10 @@
+/* General Reset */
 * {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -10,53 +15,106 @@ body {
 }
 
 header {
-  background-color: #034694; /* Chelsea blue */
+  background-color: #034694;
   padding: 10px 0;
   text-align: center;
 }
 
-.navbar {
+#navbar {
+  background-color: #034694;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+#navbar ul {
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
   display: flex;
-  justify-content: center; /* Align items centrally */
-  align-items: center; /* Vertical alignment */
-  gap: 15px; /* Small gap for minimal spacing */
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.navbar li {
-  margin: 0; /* Remove extra margin */
+#navbar li {
+  margin: 0;
 }
 
-.navbar a {
+#navbar a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  padding: 0 5px; /* Minimal padding to bring links closer */
-  margin: 0; /* Remove additional margin */
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
 }
 
-.navbar a:hover {
-  text-decoration: underline; /* Keep hover effect */
-  background-color: #023e8a; /* Add a hover background color */
-  padding: 5px 10px; /* Add padding for hover effect */
-  border-radius: 5px; /* Rounded hover background */
+#navbar a:hover {
+  background-color: #023e8a;
+  border-radius: 5px;
+}
+
+#navbar a:active {
+  background-color: #022c63;  
 }
 
 h1 {
-  color: #034694; /* Chelsea blue */
+  color: #034694;
   margin-top: 20px;
   text-align: center;
   font-family: "Roboto Condensed", sans-serif;
 }
 
 h2 {
-  color: #034694; /* Chelsea blue */
+  color: #034694;
   font-family: "Roboto Condensed", sans-serif;
 }
 
-#team-content, #fixtures-content, #gallery-content {
+/* Team Content */
+#team-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.player {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  width: 250px; /* Set consistent width */
+  min-height: 300px; /* Set minimum height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.player img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin: 0 auto 10px;
+}
+
+.edit-btn {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #034694;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-btn:hover {
+  background-color: #023e8a;
+}
+
+/* Fixtures and Gallery Content */
+#fixtures-content, #gallery-content {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -64,11 +122,19 @@ h2 {
   margin-top: 20px;
 }
 
-#team-content .player, #fixtures-content .fixture, #gallery-content .gallery-item {
-  text-align: center;
-  width: 200px;
+#gallery-content .gallery-item img {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
+#gallery-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
 
 .container {
   max-width: 100%;
@@ -80,65 +146,77 @@ section {
   margin-bottom: 50px;
 }
 
-
-@media (max-width: 768px) {
-  #map-container {
-    width: 100%; 
-    height: 250px; 
-    margin: 0; 
-    border-radius: 0; 
-  }
-
-  #map-container iframe {
-    width: 100%; 
-    height: 100%;
-  }
-
-  body{
-    background-color: yellow;
-  }
-}
-
-
-.navbar a.active {
-  text-decoration: none;
-  color: #ffd700; /* Active link color */
-}
-
+/* Map Section */
 #map-section {
   margin: 20px 0;
-  text-align: center; /* Center-align the map section title */
+  text-align: center;
 }
 
 #map-container {
- max-width: 100%;
- overflow: hidden;
+  max-width: 1000px;
+  height: 300px;
+  margin: 0 auto;
+  border: 2px solid #034694;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 #map-container iframe {
-  width: 100%; /* Fill the container width */
-  height: 100%; /* Fill the container height */
+  width: 100%;
+  height: 100%;
 }
 
-#gallery-content .gallery-item img {
+.fixture {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  width: 250px; /* Consistent width for fixtures */
+  min-height: 150px; /* Consistent height for visual alignment */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.gallery-item {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  width: 250px; /* Set width for consistency */
+  min-height: 150px; /* Ensure minimum height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.gallery-item img {
   max-width: 100%;
-  max-height: 200px;
+  max-height: 150px;
   object-fit: cover;
-  border-radius: 8px; /* Ensure consistent styling */
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
 
-#gallery-content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 20px;
-  justify-content: center;
-}
 
-html {
-  scroll-behavior: smooth;
-}
+/* Responsive Design */
+@media (max-width: 768px) {
+  #map-container {
+    width: 100%;
+    height: 250px;
+    margin: 0;
+    border-radius: 0;
+    border: none;
+  }
 
-.player-image {
-  object-fit: cover; /* Ensures the image content fits within the dimensions */
-  aspect-ratio: 1 / 1; /* Ensures a square aspect ratio */
+  #map-container iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+  body {
+    background-color: yellow;
+  }
 }

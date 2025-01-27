@@ -9,16 +9,19 @@
 </head>
 <body>
   <header>
-    <ul class="navbar">
-      <li><a href="#">Home</a></li><!--
-      --><li><a href="#team">Team</a></li><!--
-      --><li><a href="#fixtures">Fixtures</a></li><!--
-      --><li><a href="#gallery">Gallery</a></li>
-    </ul>    
+    <nav id = "navbar">
+      <ul>
+        <!-- Updated links to use anchors for scrolling -->
+        <li><a href="#team">Team</a></li>
+        <li><a href="#fixtures">Fixtures</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#map-section">Visit</a></li>
+      </ul>
+    </nav>
   </header>
 
   <div class="container">
-    <h1>Welcome to Chelsea FC Fan Website</h1>
+    <h1 style="color: #034694;">Welcome to Chelsea FC Fan Website</h1>
   </div>
 
   <!-- Team Section -->
@@ -45,8 +48,7 @@
     </div>
   </section>
 
-  <script src="script.js"></script>
-
+  <!-- Map Section -->
   <section id="map-section">
     <h2 class="text-primary">Visit Stamford Bridge</h2>
     <div id="map-container">
@@ -59,6 +61,7 @@
       </iframe>
     </div>
   </section>
-  
+
+  <script src="script.js"></script>
 </body>
 </html>
