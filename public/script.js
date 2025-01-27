@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="player card shadow-sm p-3 mb-5 bg-white rounded" style="width: 18rem; text-align: center;">
                     <img src="${player.image}" alt="${player.name}" class="card-img-top player-image">
                     <div class="card-body">
-                        
+                        <h3 class="card-title">${player.name}</h3>
                         <p class="card-text">Position: ${player.position}</p>
                         <p class="card-text">Nationality: ${player.nationality}</p>
                     </div>
