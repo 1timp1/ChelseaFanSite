@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1674988239196,
+    "homeTeam": "Chelsea",
+    "awayTeam": "Arsenal",
+    "date": "2025-02-01",
+    "location": "Stamford Bridge",
+    "relatedImages": [
+      3
+    ],
+    "relatedPlayers": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 1674988239200,
+    "homeTeam": "Manchester United",
+    "awayTeam": "Chelsea",
+    "date": "2025-02-10",
+    "location": "Old Trafford",
+    "relatedImages": [
+      1,
+      3
+    ],
+    "relatedPlayers": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 1738116095849,
+    "homeTeam": "Chelsea",
+    "awayTeam": "Arsenal",
+    "date": "2025-01-29",
+    "location": "Th"
+  },
+  {
+    "id": 1738116667534,
+    "homeTeam": "Chelsea",
+    "awayTeam": "Liverpool",
+    "date": "2025-03-15",
+    "location": "Anfield"
+  }
+]

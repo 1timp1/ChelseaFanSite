@@ -1,0 +1,407 @@
+{
+	"info": {
+		"_postman_id": "84f3e4fe-9f02-4c13-8f86-278250227200",
+		"name": "ChelseaWSAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41636463"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/test",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"test"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "34"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"22-oYBatW2oILUfp5avpWszYbMVzaw\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 29 Jan 2025 02:07:03 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Welcome Chelsea Fans\"\n}"
+				}
+			]
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/team",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"team"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "531"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"213-U/xwLA1q/juw36CMZ0fVn99lYfw\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 29 Jan 2025 02:08:17 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Cole Palmer\",\n        \"position\": \"Forward\",\n        \"nationality\": \"England\",\n        \"image\": \"/images/palmer.jpg\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Nicolas Jackson\",\n        \"position\": \"Forward\",\n        \"nationality\": \"Senegal\",\n        \"image\": \"/images/jackson.jpg\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Enzo Fernandez\",\n        \"position\": \"Midfielder\",\n        \"nationality\": \"Argentina\",\n        \"image\": \"/images/enzo.jpg\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Reece James\",\n        \"position\": \"Defender\",\n        \"nationality\": \"England\",\n        \"image\": \"/images/james.jpg\"\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Noni Madueke\",\n        \"position\": \"Forward\",\n        \"nationality\": \"England\",\n        \"image\": \"/images/noni.jpg\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Cole Palmer\",\r\n  \"position\": \"Midfielder\",\r\n  \"nationality\": \"England\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/team/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"team",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "158"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"9e-F87eSG1oiQXGxXxc+z4Heu3qtiI\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 29 Jan 2025 02:09:26 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Player updated successfully!\",\n    \"player\": {\n        \"id\": 1,\n        \"name\": \"Cole Palmer\",\n        \"position\": \"Midfielder\",\n        \"nationality\": \"England\",\n        \"image\": \"/images/palmer.jpg\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/fixtures",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"fixtures"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "431"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1af-fVXawRnUBF7b+1KiINrHE9Jgf5M\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 29 Jan 2025 02:09:46 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1674988239196,\n        \"homeTeam\": \"Chelsea\",\n        \"awayTeam\": \"Arsenal\",\n        \"date\": \"2025-02-01\",\n        \"location\": \"Stamford Bridge\",\n        \"relatedImages\": [\n            3\n        ],\n        \"relatedPlayers\": [\n            1,\n            2,\n            3,\n            4,\n            5\n        ]\n    },\n    {\n        \"id\": 1674988239200,\n        \"homeTeam\": \"Manchester United\",\n        \"awayTeam\": \"Chelsea\",\n        \"date\": \"2025-02-10\",\n        \"location\": \"Old Trafford\",\n        \"relatedImages\": [\n            1,\n            3\n        ],\n        \"relatedPlayers\": [\n            1,\n            2,\n            3,\n            4,\n            5\n        ]\n    },\n    {\n        \"id\": 1738116095849,\n        \"homeTeam\": \"Chelsea\",\n        \"awayTeam\": \"Arsenal\",\n        \"date\": \"2025-01-29\",\n        \"location\": \"Th\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"homeTeam\": \"Chelsea\",\r\n  \"awayTeam\": \"Liverpool\",\r\n  \"date\": \"2025-03-15\",\r\n  \"location\": \"Anfield\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/fixtures",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"fixtures"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "157"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"9d-4Kx04vXY0vAgDSRf9QJxW96pZnQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 29 Jan 2025 02:11:07 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Fixture added successfully!\",\n    \"fixture\": {\n        \"id\": 1738116667534,\n        \"homeTeam\": \"Chelsea\",\n        \"awayTeam\": \"Liverpool\",\n        \"date\": \"2025-03-15\",\n        \"location\": \"Anfield\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/gallery",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"gallery"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "292"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"124-b/GS16E27M837PGC9WAgPNOx97Y\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 29 Jan 2025 02:11:24 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"url\": \"/images/goal.jpg\",\n        \"description\": \"Chelsea scoring a goal\",\n        \"relatedPlayers\": [\n            1,\n            2,\n            3,\n            4,\n            5\n        ]\n    },\n    {\n        \"id\": 2,\n        \"url\": \"/images/fans.jpg\",\n        \"description\": \"Chelsea fans cheering\",\n        \"relatedPlayers\": []\n    },\n    {\n        \"id\": 3,\n        \"url\": \"/images/stadium.jpg\",\n        \"description\": \"Stamford Bridge stadium\",\n        \"relatedPlayers\": []\n    }\n]"
+				}
+			]
+		}
+	]
+}

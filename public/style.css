@@ -21,11 +21,26 @@ header {
 }
 
 #navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: #034694;
-  padding: 10px 0;
+  padding: 10px 20px;
   position: sticky;
   top: 0;
   z-index: 1000;
+}
+
+#logo{
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+#chelsea-logo {
+  height : 50px;
+  width: auto;
+  margin-right: 20px;
 }
 
 #navbar ul {
@@ -35,6 +50,7 @@ header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-grow: 1;
 }
 
 #navbar li {
@@ -62,12 +78,13 @@ h1 {
   color: #034694;
   margin-top: 20px;
   text-align: center;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Bebas Neue", serif;
 }
 
 h2 {
   color: #034694;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Bebas Neue", serif;
+  text-align: start;
 }
 
 /* Team Content */
@@ -159,9 +176,9 @@ h2 {
 }
 
 .container {
-  max-width: 100%;
+  max-width: 1500px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 20px;
 }
 
 section {
@@ -201,6 +218,78 @@ section {
   justify-content: space-between;
 }
 
+.dashed-box {
+  border: 2px dashed #034694;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  min-height: 150px;
+  cursor: pointer;
+  color: #034694;
+}
+
+.add-symbol {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.dashed-box:hover {
+  background-color: #f0f8ff;
+}
+
+.dashed-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dashed-box input,
+.dashed-box button {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.dashed-box button {
+  background-color: #034694;
+  color: white;
+  cursor: pointer;
+}
+
+.dashed-box button:hover {
+  background-color: #023e8a;
+}
+
+.section {
+  margin-bottom: 50px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input:invalid {
+  border: 2px solid red;
+}
+
+input:focus:invalid {
+  outline: none;
+  box-shadow: 0 0 5px red;
+}
+
+input:valid {
+  border: 2px solid green;
+}
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
   #map-container {
@@ -217,6 +306,6 @@ section {
   }
 
   body {
-    background-color: yellow;
+    background-color: cadetblue;
   }
 }

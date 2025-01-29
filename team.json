@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Cole Palmer",
+    "position": "Midfielder",
+    "nationality": "England",
+    "image": "/images/palmer.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Nicolas Jackson",
+    "position": "Forward",
+    "nationality": "Senegal",
+    "image": "/images/jackson.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Enzo Fernandez",
+    "position": "Midfielder",
+    "nationality": "Argentina",
+    "image": "/images/enzo.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Reece James",
+    "position": "Defender",
+    "nationality": "England",
+    "image": "/images/james.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Noni Madueke",
+    "position": "Forward",
+    "nationality": "England",
+    "image": "/images/noni.jpg"
+  }
+]

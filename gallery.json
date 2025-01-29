@@ -1,0 +1,23 @@
+[
+    {
+      "id": 1,
+      "url": "/images/goal.jpg",
+      "description": "Chelsea scoring a goal",
+      "relatedPlayers": [1,2,3,4,5]
+
+    },
+    {
+      "id": 2,
+      "url": "/images/fans.jpg",
+      "description": "Chelsea fans cheering",
+      "relatedPlayers" :[]
+      
+    },
+    {
+      "id": 3,
+      "url": "/images/stadium.jpg",
+      "description": "Stamford Bridge stadium",
+      "relatedPlayers": []
+    }
+  ]
+  
